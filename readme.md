@@ -2,8 +2,7 @@
 
 ![](screenshot.png)
 
-This repo is a demonstration of how to use Polymer elements that are still HTML
-imports with Stencil.
+This repo is a demonstration of how to use Polymer elements that are still in HTML imports with Stencil.
 
 ## Adding HTML Imports
 
@@ -11,7 +10,7 @@ There is a central imports file where you specify all of the HTML imports for
 your app.
 
 ```bash
-/src/imports.html
+/src/polymer-imports.html
 ```
 
 After adding imports to that file, you need to run the bundler script that will
