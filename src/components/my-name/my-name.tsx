@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, Listen } from '@stencil/core';
 
 @Component({
   tag: 'my-name',
@@ -7,6 +7,12 @@ import { Component, Prop } from '@stencil/core';
 export class MyName {
   @Prop() first: string;
   @Prop() last: string;
+
+  @Listen('change')
+  handleChange(e) {
+    console.log(e);
+  }
+
 
   render() {
     return (
