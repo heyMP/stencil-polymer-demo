@@ -8,17 +8,20 @@
   ],
   "scripts": {
     "build": "stencil build --prerender",
+    "bundle": "./node_modules/.bin/polymer-bundler src/polymer-imports.html > src/assets/build.html --inline-scripts --inline-css",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "serve": "stencil-dev-server",
     "start": "npm run dev"
   },
   "dependencies": {
+    "@polymer/paper-input": "^0.0.3",
     "@stencil/core": "next",
     "@stencil/router": "0.0.9"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
-    "@stencil/utils": "latest"
+    "@stencil/utils": "latest",
+    "polymer-bundler": "^3.0.1"
   },
   "repository": {
     "type": "git",
