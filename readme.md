@@ -1,5 +1,7 @@
 # Stencil Polymer Demo
 
+![](screenshot.png)
+
 This repo is a demonstration of how to use Polymer elements that are still HTML
 imports with Stencil.
 
